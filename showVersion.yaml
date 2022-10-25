@@ -3,8 +3,6 @@
   hosts: SW01
   connection: ansible.netcommon.network_cli
   gather_facts: no
-
   tasks:
-   - name: test show command
-     arista.eos.eos_command:
-       commands: show version
+    arista.eos.eos_command:
+      commands: show version
