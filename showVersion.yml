@@ -1,10 +1,6 @@
----
-- name: first test awx
-  hosts: switch01
-  connection: ansible.netcommon.network_cli
-  gather_facts: no
-  
+- name: Hello World Sample
+  hosts: all
   tasks:
-    - name: test show command
+    - name: Hello Message
       arista.eos.eos_command:
         commands: show version
