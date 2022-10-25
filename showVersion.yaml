@@ -1,6 +1,5 @@
 ---
-- name: Test
-  hosts: SW01
+- hosts: SW01
   connection: ansible.netcommon.network_cli
   gather_facts: no
   tasks:
