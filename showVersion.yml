@@ -1,6 +1,5 @@
 - name: Hello World Sample
   hosts: all
   tasks:
-  - name: Hello Message
-    arista.eos.eos_command:
+  - arista.eos.eos_command:
       commands: show version
