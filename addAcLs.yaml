@@ -2,6 +2,8 @@
   hosts: SW01
   connection: ansible.netcommon.network_cli
   gather_facts: no
+  collections: 
+    - arista.eos
 
   tasks:
     - name: Merge provided configuration with device configuration
