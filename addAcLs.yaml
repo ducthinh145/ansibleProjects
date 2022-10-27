@@ -1,5 +1,5 @@
 - name: Test
-  hosts: SW01
+  hosts: switch01
   connection: ansible.netcommon.network_cli
   gather_facts: no
   collections: 
